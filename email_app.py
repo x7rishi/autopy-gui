@@ -7,7 +7,7 @@ import smtplib
 # prerequistive install mime module from pip library
 
 # smtp email server connection
-user="rishi.iam@live.com"
+user="========useremailid========="
 
 # getting working multiple recipient
 
@@ -25,7 +25,7 @@ botfrm=Frame(root,relief=SUNKEN,bg='steel blue')
 botfrm.pack(side=BOTTOM)
 
 
-user="testrishi447@gmail.com"
+user="==========useridemail============"
 
 #sending process command function
 
@@ -35,7 +35,7 @@ def send(recipy, subject, msgbody):
     s.ehlo()
     s.starttls()
 
-    s.login(user, 'Testing1234') #login changes should be made their
+    s.login(user, '=======password=======') #login changes should be made their
     msg = MIMEMultipart()
     msg["Subject"] = subject
     msg["From"] = user
